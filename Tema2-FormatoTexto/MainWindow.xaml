@@ -1,0 +1,21 @@
+﻿<Window x:Class="Tema2_FormatoTexto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema2_FormatoTexto"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="314" Width="637">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="58,39,0,0" TextWrapping="Wrap" Text="Texto" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="436,60,0,0" TextWrapping="Wrap" Text="Color de texto" VerticalAlignment="Top"/>
+        <TextBox x:Name="escribeTextBox" HorizontalAlignment="Left" Margin="58,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="60" TextChanged="EscribeTextBox_TextChanged"/>
+        <RadioButton x:Name="azulColorRadioButon" Content="Azul" HorizontalAlignment="Left" Margin="530,44,0,0" VerticalAlignment="Top" Checked="AzulColorRadioButon_Checked"/>
+        <RadioButton x:Name="rojoColorRadioButon" Content="Rojo" HorizontalAlignment="Left" Margin="530,64,0,0" VerticalAlignment="Top" Checked="RojoColorRadioButon_Checked"/>
+        <RadioButton x:Name="verdeColorRadioButon" Content="Verde" HorizontalAlignment="Left" Margin="530,84,0,0" VerticalAlignment="Top" Checked="VerdeColorRadioButon_Checked"/>
+        <CheckBox x:Name="negritaCheckBox" Content="Negrita" HorizontalAlignment="Left" Margin="224,60,0,0" VerticalAlignment="Top" FontWeight="Bold" Checked="NegritaCheckBox_Changed" Unchecked="NegritaCheckBox_Changed"/>
+        <CheckBox x:Name="cursivaCheckBox" Content="Cursiva" HorizontalAlignment="Left" Margin="342,60,0,0" VerticalAlignment="Top" FontStyle="Italic" Checked="CursivaCheckBox_Changed" Unchecked="CursivaCheckBox_Changed"/>
+        <TextBlock x:Name="salidaTextoTextBlock" HorizontalAlignment="Center" Margin="0,204,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="522" TextAlignment="Center" Height="30" FontSize="20" Background="#FFECE062" Foreground="#FF0090FF"/>
+
+    </Grid>
+</Window>
